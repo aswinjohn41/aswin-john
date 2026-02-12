@@ -17,7 +17,7 @@ function Hero() {
       justifyContent: 'center'
     }}>
       <Container maxWidth="md">
-        <Avatar
+        {/* <Avatar
           src="/aswinjohn2.JPG"
           sx={{
             width: 200,
@@ -27,7 +27,7 @@ function Hero() {
             margin: '0 auto 2rem',
             animation: 'bounceIn 1.5s ease-out, float 3s ease-in-out 1.8s infinite'
           }}
-        />
+        /> */}
         <Typography variant="h1" sx={{
           fontSize: { xs: '3rem', md: '4rem' },
           fontWeight: 700,
@@ -113,6 +113,8 @@ function Hero() {
 }
 
 export default Hero
+
+
 
 
 

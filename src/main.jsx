@@ -1,5 +1,6 @@
 import './style.css'
 
+const base = import.meta.env.BASE_URL
 document.querySelector('#app').innerHTML = `
   <!-- Navigation -->
   <nav class="navbar">
@@ -19,14 +20,17 @@ document.querySelector('#app').innerHTML = `
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-container">
-      <img src="/aswinjohn2.JPG" alt="Aswin John - Profile Photo" class="hero-image">
-      <h1 class="hero-title">Aswin John</h1>
-      <h2 class="hero-subtitle">Mobile & Web Developer | UI/UX Designer</h2>
-      <p class="hero-location">Toronto, Ontario, Canada</p>
-      <div class="hero-contact">
-        <a href="mailto:aswinjohn41@gmail.com" class="contact-link">📧 aswinjohn41@gmail.com</a>
-        <a href="https://github.com/aswinjohn41" class="contact-link" target="_blank">💻 github.com/aswinjohn41</a>
-        <span class="contact-link">📱 226-977-8917</span>
+      <img src="${base}aswinjohn2.JPG" alt="Aswin John - Profile Photo" class="hero-image">
+      <div class="hero-content">
+        <h1 class="hero-title">Aswin John</h1>
+        <h2 class="hero-subtitle">Mobile & Web Developer | UI/UX Designer</h2>
+        <p class="hero-location">Toronto, Ontario, Canada</p>
+        <div class="hero-contact">
+          <a href="mailto:aswinjohn41@gmail.com" class="contact-link">📧 Email</a>
+          <a href="https://github.com/aswinjohn41" class="contact-link" target="_blank">💻 GitHub</a>
+          <a href="https://www.linkedin.com/in/aswin-john-676a491a6" class="contact-link" target="_blank">LinkedIn</a>
+          <span class="contact-link">📱 226-977-8917</span>
+        </div>
       </div>
     </div>
   </section>
@@ -53,17 +57,15 @@ document.querySelector('#app').innerHTML = `
           <h4>Loom Analytics – Toronto, ON</h4>
           <p class="date">Mar 2024 – Present</p>
           <ul>
-            <li>Spearheading development across web, mobile, and desktop platforms</li>
-            <li>Designed and developed live transcription app using Figma, React, and WebSockets</li>
-            <li>Built Electron apps for macOS and Windows</li>
-            <li>Developed mobile applications using Kotlin, Swift, and Flutter</li>
-            <li>Handled end-to-end UI/UX: wireframes, design systems, and implementation</li>
-            <li>Managed source control, CI/CD, and deployments using GitHub, Jira, and AWS</li>
+            <li>Develop native iOS (Swift) and Android (Kotlin) apps; build cross-platform apps with Flutter and React Native</li>
+            <li>Worked on C++ desktop applications (incl. Audacity) using wxWidgets for macOS and Windows; build web apps with React, JSX, JavaScript</li>
+            <li>Design and develop AI-powered live transcription app using advanced AI tools; Figma, React, WebSockets</li>
+            <li>End-to-end UI/UX: wireframes, design systems, implementation; manage GitHub, Jira, CI/CD, AWS</li>
           </ul>
         </div>
 
         <div class="experience-card">
-          <h3>Software Developer Intern</h3>
+          <h3>Software Developer</h3>    
           <h4>Stackodile Pvt. Ltd. – India</h4>
           <p class="date">Nov 2022 – Apr 2024</p>
           <ul>
@@ -81,6 +83,17 @@ document.querySelector('#app').innerHTML = `
           <ul>
             <li>Developed frontend interfaces using React and mobile components in Flutter</li>
             <li>Worked on UI polishing, testing, and incremental improvements</li>
+          </ul>
+        </div>
+
+        <div class="experience-card">
+          <h3>Software Developer</h3>
+          <h4>Diya Systems – Mangaluru, India</h4>
+          <p class="date">Nov 2021 – Dec 2022</p>
+          <ul>
+            <li>Designed and integrated software for e-commerce and system integration applications</li>
+            <li>Used C++, Python, JavaScript, and shell scripting in Unix/Linux environments</li>
+            <li>System evaluations, performance improvements, bug fixes; documented processes and collaborated with stakeholders</li>
           </ul>
         </div>
 
@@ -117,8 +130,11 @@ document.querySelector('#app').innerHTML = `
           <h3>Web & Desktop Development</h3>
           <div class="skill-tags">
             <span class="skill-tag">React.js</span>
+            <span class="skill-tag">JSX</span>
             <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Electron.js</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">wxWidgets</span>
+            <span class="skill-tag">Audacity</span>
             <span class="skill-tag">WebSockets</span>
             <span class="skill-tag">HTML</span>
             <span class="skill-tag">CSS</span>
@@ -175,9 +191,8 @@ document.querySelector('#app').innerHTML = `
           <h3>Live Transcription Platform</h3>
           <p>Loom Analytics</p>
           <ul>
-            <li>Designed UI in Figma, built frontend with React + WebSockets</li>
-            <li>Deployed via Electron for desktop (macOS & Windows)</li>
-            <li>Supported mobile users (iOS & Android) with seamless UX</li>
+            <li>AI-powered app using advanced AI tools; Figma UI, React/JSX + WebSockets</li>
+            <li>C++ desktop app for macOS & Windows; native iOS, Android, Flutter, React Native</li>
           </ul>
         </div>
 
@@ -258,6 +273,10 @@ document.querySelector('#app').innerHTML = `
           <a href="https://github.com/aswinjohn41" target="_blank">github.com/aswinjohn41</a>
         </div>
         <div class="contact-item">
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/aswin-john-676a491a6" target="_blank">linkedin.com/in/aswin-john</a>
+        </div>
+        <div class="contact-item">
           <h3>📍 Location</h3>
           <p>Toronto, Ontario, Canada</p>
         </div>
@@ -272,3 +291,20 @@ document.querySelector('#app').innerHTML = `
     </div>
   </footer>
 `
+
+// Scroll-triggered reveal animations
+const revealElements = document.querySelectorAll('.section-title, .about-text, .experience-card, .skill-category, .project-card, .education-card, .contact-item')
+revealElements.forEach((el, i) => {
+  el.classList.add('reveal')
+  el.style.transitionDelay = `${Math.min(i * 0.1, 0.5)}s`
+})
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed')
+    }
+  })
+}, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' })
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el))

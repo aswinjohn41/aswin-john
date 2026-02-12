@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aswin John - Resume</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Source Sans 3', -apple-system, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.35;
+      color: #1a1a1a;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.5in;
+      background: #fff;
+    }
+    @media print {
+      body { padding: 0.4in; }
+      .no-print { display: none !important; }
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 1.25em;
+      padding-bottom: 1em;
+      border-bottom: 2px solid #2d3748;
+    }
+    .header h1 {
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.2em;
+    }
+    .header .title {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #4a5568;
+      margin-bottom: 0.6em;
+    }
+    .header .contact {
+      font-size: 9.5pt;
+      color: #4a5568;
+    }
+    .header .contact span { margin: 0 0.4em; }
+    .header .contact a { color: #2d3748; text-decoration: none; }
+    section {
+      margin-bottom: 1.1em;
+    }
+    section h2 {
+      font-size: 11pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #2d3748;
+      margin-bottom: 0.5em;
+      padding-bottom: 0.2em;
+      border-bottom: 1px solid #cbd5e0;
+    }
+    .job {
+      margin-bottom: 1em;
+    }
+    .job:last-child { margin-bottom: 0; }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.3em;
+      margin-bottom: 0.35em;
+    }
+    .job-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+    .job-meta {
+      font-size: 9.5pt;
+      color: #4a5568;
+    }
+    .job-company {
+      font-weight: 600;
+      font-size: 10pt;
+      color: #2d3748;
+      margin-bottom: 0.25em;
+    }
+    .job ul {
+      margin-left: 1.2em;
+      padding-left: 0.3em;
+    }
+    .job li {
+      margin-bottom: 0.25em;
+      text-align: justify;
+    }
+    .edu-item {
+      margin-bottom: 0.9em;
+    }
+    .edu-item:last-child { margin-bottom: 0; }
+    .edu-degree { font-weight: 700; font-size: 10pt; }
+    .edu-school { font-weight: 600; color: #2d3748; margin-bottom: 0.2em; }
+    .edu-date { font-size: 9.5pt; color: #4a5568; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5em 2em;
+    }
+    .skill-cat {
+      font-weight: 600;
+      font-size: 9.5pt;
+      color: #2d3748;
+      margin-bottom: 0.2em;
+    }
+    .skill-list {
+      font-size: 9.5pt;
+      color: #4a5568;
+      line-height: 1.5;
+    }
+    .project {
+      margin-bottom: 0.6em;
+    }
+    .project:last-child { margin-bottom: 0; }
+    .project-title { font-weight: 700; font-size: 10pt; }
+    .project-desc { font-size: 9.5pt; color: #4a5568; margin-top: 0.15em; }
+    .print-btn {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      padding: 10px 20px;
+      background: #2d3748;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      font-family: inherit;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .print-btn:hover { background: #1a202c; }
+  </style>
+</head>
+<body>
+  <button class="print-btn no-print" onclick="window.print()">Save as PDF</button>
+
+  <header class="header">
+    <h1>Aswin John</h1>
+    <p class="title">Mobile & Web Developer | UI/UX Designer</p>
+    <p class="contact">
+      <a href="mailto:aswinjohn41@gmail.com">aswinjohn41@gmail.com</a>
+      <span>|</span>
+      <span>226-977-8917</span>
+      <span>|</span>
+      <span>Toronto, Ontario, Canada</span>
+      <span>|</span>
+      <a href="https://github.com/aswinjohn41" target="_blank">github.com/aswinjohn41</a>
+      <span>|</span>
+      <a href="https://linkedin.com/in/aswin-john-676a491a6" target="_blank">linkedin.com/in/aswin-john</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p>Full-stack Mobile & Web Developer with 3+ years of experience building cross-platform applications. Specializes in React, Flutter, and React Native for web, iOS, and Android. Proven expertise in UI/UX design, real-time systems, CI/CD, and cloud architecture. Delivers scalable solutions from wireframes to production.</p>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+      <div class="job-company">Loom Analytics — Toronto, ON</div>
+      <div class="job-header">
+        <span class="job-title">Mobile & Web Developer | UI/UX Designer</span>
+        <span class="job-meta">Mar 2024 – Present</span>
+      </div>
+      <ul>
+        <li>Develop native iOS (Swift) and Android (Kotlin) applications; build cross-platform apps with Flutter and React Native</li>
+        <li>Develop C++ desktop applications (including Audacity) using wxWidgets framework for macOS and Windows; build web applications with React, JSX, and JavaScript</li>
+        <li>Design and develop AI-powered live transcription application using advanced AI tools; integrate with Figma, React, and WebSockets</li>
+        <li>Managed AWS infrastructure (CodeCommit, CodeBuild, EC2, S3, Lambda); implemented CI/CD pipelines for production deployments</li>
+        <li>Handled end-to-end UI/UX: wireframes, design systems, and implementation; maintained modular codebases and reusable components</li>
+        <li>Containerized applications with Docker; collaborated with cross-functional teams on performance optimization and feature integration</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-company">Stackodile Pvt. Ltd. — Kochi, India</div>
+      <div class="job-header">
+        <span class="job-title">Software Developer Intern (Co-op)</span>
+        <span class="job-meta">Nov 2022 – Apr 2024</span>
+      </div>
+      <ul>
+        <li>Built and maintained cross-platform mobile applications using Flutter and React Native for e-commerce and workflow systems</li>
+        <li>Translated Figma designs into production-ready, responsive interfaces</li>
+        <li>Integrated REST APIs and implemented business logic; participated in code review and testing</li>
+        <li>Supported feature development, performance optimization, and system testing in Agile environment</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-company">Software Development Intern — Confidential</div>
+      <div class="job-header">
+        <span class="job-title">Frontend & Mobile Developer</span>
+        <span class="job-meta">Apr 2024 – Sep 2024</span>
+      </div>
+      <ul>
+        <li>Developed frontend interfaces with React and mobile components in Flutter</li>
+        <li>Delivered UI polishing, testing, and incremental feature improvements</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-company">Diya Systems — Mangaluru, India</div>
+      <div class="job-header">
+        <span class="job-title">Software Developer</span>
+        <span class="job-meta">Nov 2021 – Dec 2022</span>
+      </div>
+      <ul>
+        <li>Designed and integrated software for e-commerce and system integration applications</li>
+        <li>Utilized C++, Python, JavaScript, and shell scripting in Unix/Linux environments</li>
+        <li>Conducted system evaluations, performance improvements, and bug fixes; documented processes and collaborated with stakeholders</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-company">Futura Labs — Kerala, India</div>
+      <div class="job-header">
+        <span class="job-title">Software Developer Intern</span>
+        <span class="job-meta">Nov 2021 – Jul 2022</span>
+      </div>
+      <ul>
+        <li>Assisted in Android development, software testing, and web application features</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <div class="skill-cat">Mobile Development</div>
+        <div class="skill-list">React Native, Flutter, Kotlin, Swift, Android Studio, Xcode</div>
+      </div>
+      <div>
+        <div class="skill-cat">Web & Desktop</div>
+        <div class="skill-list">React, JSX, JavaScript, TypeScript, Node.js, C++, wxWidgets, Audacity, WebSockets, HTML, CSS</div>
+      </div>
+      <div>
+        <div class="skill-cat">UI/UX & Design</div>
+        <div class="skill-list">Figma, Wireframing, Prototyping, Responsive Design, Design Systems</div>
+      </div>
+      <div>
+        <div class="skill-cat">Backend & Cloud</div>
+        <div class="skill-list">Node.js, Firebase, SQLite, REST APIs, AWS (EC2, S3, Lambda, CodeBuild), Docker</div>
+      </div>
+      <div>
+        <div class="skill-cat">Tools & Workflow</div>
+        <div class="skill-list">Git, GitHub, Jira, Postman, CI/CD, Agile/Scrum, Code Review, QA</div>
+      </div>
+      <div>
+        <div class="skill-cat">Languages & Systems</div>
+        <div class="skill-list">C++, Python, Shell Scripting, Unix/Linux</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Project Highlights</h2>
+    <div class="project">
+      <div class="project-title">Live Transcription Platform</div>
+      <div class="project-desc">AI-powered app using advanced AI tools; Figma UI, React/JSX + WebSockets frontend; C++ desktop for macOS/Windows; native iOS, Android, Flutter, and React Native mobile support.</div>
+    </div>
+    <div class="project">
+      <div class="project-title">Smart Ticketing App (Android)</div>
+      <div class="project-desc">QR code-based bus ticketing system with secure ticket generation and offline validation.</div>
+    </div>
+    <div class="project">
+      <div class="project-title">iOS Weather Application</div>
+      <div class="project-desc">Real-time weather app built with Swift and external API integration.</div>
+    </div>
+    <div class="project">
+      <div class="project-title">React Native Weather App</div>
+      <div class="project-desc">Cross-device weather app with Firebase sync and persistent user preferences.</div>
+    </div>
+    <div class="project">
+      <div class="project-title">Flutter BMI Calculator</div>
+      <div class="project-desc">Clean, responsive mobile app with intuitive UI for health metrics.</div>
+    </div>
+    <div class="project">
+      <div class="project-title">Kotlin Birthday Tracker</div>
+      <div class="project-desc">Local storage-based reminder app with notification features and user-friendly interface.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="edu-item">
+      <div class="edu-school">Fanshawe College — London, Ontario</div>
+      <div class="edu-degree">Post-Graduate Certificate, Mobile Application Development</div>
+      <div class="edu-date">May 2023 – Sep 2024</div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-school">Don Bosco Arts and Science College — India</div>
+      <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
+      <div class="edu-date">Aug 2018 – Aug 2022</div>
+    </div>
+  </section>
+</body>
+</html>

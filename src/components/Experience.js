@@ -16,7 +16,7 @@ const experiences = [
     ]
   },
   {
-    title: "Software Developer Intern",
+    title: "Software Developer",
     company: "Stackodile Pvt. Ltd. – India",
     date: "Nov 2022 – Apr 2024",
     points: [
@@ -99,6 +99,8 @@ function Experience() {
 }
 
 export default Experience
+
+
 
 
 

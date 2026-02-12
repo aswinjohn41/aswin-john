@@ -67,7 +67,7 @@ function App() {
             </div>
 
             <div className="experience-card">
-              <h3>Software Developer Intern</h3>
+              <h3>Software Developer</h3>
               <h4>Stackodile Pvt. Ltd. – India</h4>
               <p className="date">Nov 2022 – Apr 2024</p>
               <ul>
@@ -79,7 +79,7 @@ function App() {
             </div>
 
             <div className="experience-card">
-              <h3>Software Developer Intern</h3>
+              <h3>Software Developer</h3>
               <h4>Company Confidential</h4>
               <p className="date">Apr 2024 – Sep 2024</p>
               <ul>
