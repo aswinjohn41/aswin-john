@@ -992,8 +992,9 @@ a:hover {
     font-size: 0.9rem;
   }
 
+  /* Extra top padding so hero content clears the taller stacked navbar */
   .hero {
-    padding: 90px 1.5rem 35px;
+    padding: 200px 1.5rem 35px;
   }
 
   .hero-container {
@@ -1072,6 +1073,13 @@ a:hover {
 
   .contact-item {
     max-width: none;
+  }
+}
+
+/* Extra small screens: nav wraps to many rows, needs more clearance */
+@media (max-width: 480px) {
+  .hero {
+    padding: 220px 1rem 30px;
   }
 }
 
