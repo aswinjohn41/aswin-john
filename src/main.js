@@ -177,7 +177,7 @@ function App() {
           <div className="projects-grid">
             <div className="project-card">
               <h3>Live Transcription Platform</h3>
-              <p>Loom Analytics</p>
+            
               <ul>
                 <li>Designed UI in Figma, built frontend with React + WebSockets</li>
                 <li>Deployed via Electron for desktop (macOS & Windows)</li>
