@@ -1,15 +1,15 @@
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react' // Added React plugin
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [],
-  base: '/aswin-john/', // Matches GitHub repo name for GitHub Pages
+  plugins: [react()],
+  base: '/', // This is the fix for custom domains
   build: {
     rollupOptions: {
       input: {
-        main: 'index.html', // Explicit entry point - serves at /aswin-john/
+        main: 'index.html', 
       },
     },
   },
 })
-
