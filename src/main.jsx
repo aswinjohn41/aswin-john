@@ -189,7 +189,6 @@ document.querySelector('#app').innerHTML = `
       <div class="projects-grid">
         <div class="project-card">
           <h3>Live Transcription Platform</h3>
-          <p>Loom Analytics</p>
           <ul>
             <li>AI-powered app using advanced AI tools; Figma UI, React/JSX + WebSockets</li>
             <li>C++ desktop app for macOS & Windows; native iOS, Android, Flutter, React Native</li>
